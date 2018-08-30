@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Video App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css" />
+
+</head>
+<body>
+
+    <div id="container" style="float:left">
+
+        <div id="config_container" style="display: inline-block; width: 150px; border-style:solid; border-width:2px">
+        
+            <p>Video Chat!!!</p>
+
+            <input id="user_name" type="text" placeholder="Participant Name" required>
+
+            <input id="room_name" type="text" placeholder="Room Name" required>
+
+            <button id="connect_to_room">Connect</button>
+            <button id="disconnect_from_room">Connect</button>
+
+
+        </div>
+    
+
+
+        <div id='local_media' style="height:240px; width:320px; float:right;">
+
+        </div>
+
+        <div id='remote_media' style="float:right;">
+
+
+
+        </div>
+
+    </div>
+
+    <div id="message_box" style="overflow:auto; width:300px; height:600px; float:right; border-style:solid; border-width:2px">
+    <p>messages here</p>
+    </div>
+
+
+    <script src="//media.twiliocdn.com/sdk/js/video/releases/2.0.0-beta1/twilio-video.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
